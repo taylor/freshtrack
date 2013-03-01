@@ -5,8 +5,8 @@ module FreshBooks
     MAPPING_FNS[Date] = lambda { |xml_val|  Date.parse(xml_val.text) }
     MAPPING_FNS[:boolean] = lambda do |xml_val|
       case xml_val.text
-        when '0' : false
-        when '1' : true
+        when '0' ; false
+        when '1' ; true
       end
     end
 
